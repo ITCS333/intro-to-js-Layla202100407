@@ -26,7 +26,7 @@ function findLargest(numbers) {
   if(numbers.length === 0) {
     return null;
   }
-  return Math.max(numbers); 
+  return Math.max(...numbers); 
 }
 
 /**
@@ -47,7 +47,6 @@ function isPalindrome(str) {
  */
 function filterEvenNumbers(numbers) {
   // TODO: Implement this function.
-  function filterEvenNumbers(numbers) {
   return numbers.filter(num => num % 2 === 0);
 }
 
